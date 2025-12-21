@@ -40,11 +40,11 @@ JSON format:
   "companies": [
     {{
       "company_name": "",
-      "current_position": "",
+      "current_position": false,
       "from_date": "",
       "to_date": "",
       "job_description": "",
-      "position": false
+      "position": ""
     }}
   ],
   "projects": [
