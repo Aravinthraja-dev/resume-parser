@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+
+langchain
+langchain-core
+langchain-google-genai
+
+google-generativeai
+
+pydantic
+pydantic[email]
+
+pypdf
+
+python-multipart
+
+python-dotenv
