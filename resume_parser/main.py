@@ -20,7 +20,8 @@ if ENV == "development":
 else:
     allow_origins = [
         "https://yourdomain.com",
-        "https://www.yourdomain.com"
+        "https://www.yourdomain.com",
+        "https://resume-parser-eight-ashen.vercel.app/"
     ]
 
 app.add_middleware(
