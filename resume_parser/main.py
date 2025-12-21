@@ -32,7 +32,7 @@ app.add_middleware(
     allow_headers=["Authorization", "Content-Type"],
 )
 
-UPLOAD_DIR = "uploads"
+UPLOAD_DIR = "/tmp/uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 
@@ -74,7 +74,6 @@ async def extract_resume(file: UploadFile = File(...)):
         return validated_data
 
     except ValidationError as ve:
-        print('Validation err ', ve)
         raise HTTPException(
             status_code=422,
             detail={
@@ -84,14 +83,12 @@ async def extract_resume(file: UploadFile = File(...)):
         )
 
     except ValueError as ve:
-        print("ERROR:", str(ve))
         raise HTTPException(
             status_code=422,
             detail=str(ve)
         )
 
     except Exception as e:
-        print("ERROR:", str(e))
         raise HTTPException(
             status_code=500,
             detail="Internal server error"
