@@ -17,7 +17,7 @@ app.add_middleware(
      allow_origins=[
         "http://localhost:4200",
         "https://resume-parser-eight-ashen.vercel.app",
-        "https://dreamy-cannoli-56edca.netlify.app/"
+        "https://dreamy-cannoli-56edca.netlify.app"
     ],
     allow_credentials=False,
     allow_methods=["*"],
