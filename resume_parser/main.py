@@ -24,7 +24,10 @@ else:
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allow_origins,
+     allow_origins=[
+        "http://localhost:4200",
+        "https://resume-parser-eight-ashen.vercel.app"
+    ],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
