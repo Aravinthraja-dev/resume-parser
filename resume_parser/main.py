@@ -12,21 +12,12 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-if ENV == "development":
-    allow_origins = [
-        "http://localhost:4200",
-        "http://127.0.0.1:4200"
-    ]
-else:
-    allow_origins = [
-        "https://resume-parser-eight-ashen.vercel.app"
-    ]
-
 app.add_middleware(
     CORSMiddleware,
      allow_origins=[
         "http://localhost:4200",
-        "https://resume-parser-eight-ashen.vercel.app"
+        "https://resume-parser-eight-ashen.vercel.app",
+        "https://dreamy-cannoli-56edca.netlify.app/"
     ],
     allow_credentials=False,
     allow_methods=["*"],
