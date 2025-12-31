@@ -33,6 +33,10 @@ app.add_middleware(
 UPLOAD_DIR = "/tmp/uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
+@app.options("/{path:path}")
+async def options_handler(path: str):
+    return {}
+
 
 @app.post("/resume/extract", response_model=DynamicFormData)
 async def extract_resume(file: UploadFile = File(...)):
