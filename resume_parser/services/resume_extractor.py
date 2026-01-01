@@ -60,6 +60,26 @@ JSON format:
 
 STRICT RULES:
 
+SHORT_DESCRIPTION:
+- Generate a 1–2 sentence professional summary
+- Use ONLY information present in the resume
+- Focus on role, experience, and key technical strengths
+- Write in a neutral resume-summary style
+- Do NOT use the candidate's name
+- Do NOT use third-person pronouns (he, she, they)
+- Do NOT use first-person pronouns (I, my)
+- Do NOT add assumptions or new facts
+
+FULL_DESCRIPTION:
+- Generate a detailed professional summary (3–6 sentences)
+- Use ONLY resume information
+- Include experience, domains, technologies, and achievements if present
+- Write in a neutral resume-summary style
+- Do NOT mention the candidate's name
+- Do NOT use third-person pronouns (he, she, they)
+- Do NOT use first-person pronouns (I, my)
+- Do NOT invent or exaggerate
+
 SKILLS:
 - skills MUST be an array of strings
 - Return ONLY the TOP 10 skills
